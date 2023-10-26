@@ -10,13 +10,8 @@ def mac_address_input():
 
 # mac地址转换 EUI to 华为
 def mac_address_format_conversion__eui_to_huawei(souer_mac):
-    try:
-        # 如果错误则退出程序
-        mac = EUI(in_mac_sour)
-    except:
-        print('输入的MAC地址有误！')
-        exit()
-
+    mac = EUI(in_mac_sour)
+    mac.dialect = mac_cisco
     mac = str(mac).replace('.', '-')  # 直接用字符串处理！
 
     return mac
