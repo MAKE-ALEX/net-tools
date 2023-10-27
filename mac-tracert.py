@@ -1,6 +1,4 @@
-from netaddr import *
-
-import re
+from netaddr import EUI,mac_cisco
 
 #输入要转换的MAC
 def mac_address_input():
