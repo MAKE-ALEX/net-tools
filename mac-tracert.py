@@ -19,5 +19,5 @@ if __name__ == '__main__':
     # 输出后不要退出，输入任意键后退出
     in_mac_sour = mac_address_input()
     out_mac = mac_address_format_conversion__eui_to_huawei(in_mac_sour)
-    print(out_mac)
+    print(f'转换后的MAC:',out_mac)
     input('按任意键退出...')
