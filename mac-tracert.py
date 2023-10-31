@@ -23,3 +23,4 @@ if __name__ == '__main__':
     out_mac = mac_address_format_conversion__eui_to_huawei(in_mac_sour)
     print(out_mac)
     input('按任意键退出...')
+
